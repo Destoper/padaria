@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 30vh;
-  width: 100vw;
+  width: 98.8vw;
   background: #965a1b;
   align-items: center;
 }
@@ -65,7 +65,7 @@ section p {
   padding-top: 15vh;
   padding-left: 19vw;
   padding-right: 19vw;
-  width: 62vw;
+  width: 60.8vw;
   gap: 1.5rem;
   height: 100%;
   min-height: 60vh;
@@ -87,6 +87,10 @@ section p {
 .logo {
   margin-top: 1vh;
   scale: 0.55;
+}
+
+.pedidos .block {
+  display: flex;
 }
 
 .pedidos .nome {
@@ -134,4 +138,33 @@ section p {
   flex-shrink: 0;
   background-color: #ffffffcc;
   border-radius: 0.5rem;
+}
+
+.desc {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.desc-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .infos {
+    flex-direction: column;
+  }
+
+  .desc-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+  }
+
+  .add {
+    margin-top: 290px;
+  }
 }

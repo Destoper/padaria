@@ -139,18 +139,27 @@ export default function Home() {
       </div>
 
       <div className="body">
-        <p className="add" onClick={() => {setIsModalOpen(true)}}>
+        <p
+          className="add"
+          onClick={() => {
+            setIsModalOpen(true)
+          }}
+        >
           + Adicionar Pedido
         </p>
         <div className="pedidos">
           {data.map((pedido: Pedido) => (
-            <div style={{}}>
+            <div className='block'>
               <div className="card" key={pedido.id}>
                 <p className="nome">{pedido.nome}</p>
-                <p className="desc">
-                  Total de pães: <span className="valor">{pedido.qtd_paes} pães</span> Total a
-                  pagar: <span className="valor">R$ {pedido.qtd_paes * 0.45}</span>
-                </p>
+                <div className='desc-container'>
+                  <p className="desc">
+                    Total de pães: <span className="valor">{pedido.qtd_paes} pães</span>
+                  </p>
+                  <p className="desc">
+                    Total a pagar: <span className="valor">R$ {pedido.qtd_paes * 0.45}</span>
+                  </p>
+                </div>
               </div>
               <button onClick={() => handleDelete(pedido.id)}>Excluir</button>
             </div>

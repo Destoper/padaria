@@ -93,3 +93,23 @@
   border-color: #db1e1e;
   background-color: #fff;
 }
+
+@media(max-width: 600px){
+  .form-container{
+    align-items: center;
+    height: 28.5625rem;
+    width: 80vw;
+  }
+  .button-container{
+    flex-direction: column;
+  }
+
+  .form-container input{
+    width: 65vw;
+
+  }
+
+  .submit-button{
+    margin-bottom: 20px;
+  }
+}
