@@ -100,25 +100,19 @@
 @media(max-width: 600px){
   .form-container{
     align-items: center;
-<<<<<<< HEAD
     height: 28.5625rem;
     width: 80vw;
-=======
->>>>>>> 3022bb50ec8d39e916575de1287d3ebd114a700d
   }
   .button-container{
     flex-direction: column;
   }
-<<<<<<< HEAD
 
   .form-container input{
     width: 65vw;
 
   }
 
-=======
   
->>>>>>> 3022bb50ec8d39e916575de1287d3ebd114a700d
   .submit-button{
     margin-bottom: 20px;
   }
